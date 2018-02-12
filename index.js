@@ -21,7 +21,7 @@ function currentLine(line) {
     var index = 1;
     while (line.length > 0) {
       sentence = sentence + ` ${index}. ${line.shift()}`
-      index++
+      index++;
     }
   }
   return sentence;
