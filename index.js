@@ -20,7 +20,7 @@ function currentLine(line) {
     var sentence = 'The line is currently: ';
     var index = 1;
     while (line.length > 0) {
-      sentence = sentence + ', ' + `${index}. ${line.shift()}`
+      sentence = sentence + `${index}. ${line.shift()}`
     }
   }
   return sentence;
