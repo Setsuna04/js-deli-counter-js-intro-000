@@ -23,4 +23,5 @@ function currentLine(line) {
       sentence = sentence + `, ${index}. ${line.unshift()}`
     }
   }
+  return sentence;
 }
