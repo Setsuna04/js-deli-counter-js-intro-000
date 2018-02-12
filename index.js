@@ -9,6 +9,18 @@ function nowServing(katzDeliLine){
   }
   else {
     var serving = katzDeliLine.shift();
-    return `Currently serving ${serving}`
+    return `Currently serving ${serving}.`
+  }
+}
+
+function currentLine(line) {
+  if (line.length === 0) {
+    return "The line is currently empty.";
+  } else {
+    var sentence = 'The line is currently: ';
+    var index = 1;
+    while (line.length < 0) {
+      sentence = sentence + `, ${index}. ${line.unshift()}`
+    }
   }
 }
